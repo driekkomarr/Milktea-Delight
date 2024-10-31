@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: wheat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(5, 0, 0, 0.6);;
+}
+
+.navbar img {
+    max-width: 60px; /* Adjust logo size */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar-links a {
+    margin-top: 10%;
+    margin-left: 25%;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Close button style */
+.close-button {
+    margin-top: 10px;
+    margin-left: 120px;
+    color: red;
+    font-size: 45px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space from links */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 0; /* Below navbar */
+        right: 0;
+        background-color: #333;
+        height: 100%;
+        width: 50%; /* Full width */
+        z-index: 1; /* Ensure links are above other elements */
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+    }
+
+.footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar #T {
+    margin-right: 35%;
+    color: white;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-item {
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 10px; /* Optional rounded corners */
+    background-color: white;
+    text-align: center; /* Center content */
+    padding: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.product-name {
+    font-size: 0.5em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1em;
+    color: #4CAF50;
+    margin: 5px 0 10px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+h2{
+    margin-left: 5%;
+}
+
+span{
+    font-size: 0.8em;
+    color: #333;
+    margin-left: 4%;
+}
+
+.footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
